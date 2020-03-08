@@ -9,7 +9,7 @@ Ansible code to build and test a spine and leaf OSPF fabric on a Cisco NXOS base
 
 ## Installation
 ```
-git clone git@bitbucket.org:PacketFlow/ansible-cisco-nxos-ospf-fabric-builder.git
+git@github.com:rickdonato/ansible-cisco-nxos-ospf-fabric-builder.git
 ```
 
 ## Usage
@@ -20,12 +20,3 @@ ansible-playbook playbooks/fabric_test.yml
 
 ## Additional Documentation
 The relating tutorial for this repo can be found at https://www.packetflow.co.uk/how-to-build-a-spine-and-leaf-fabric-with-ansible/.
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## Contact
-If you want to contact us you can reach PacketFlow at contact@packetflow.co.uk.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
