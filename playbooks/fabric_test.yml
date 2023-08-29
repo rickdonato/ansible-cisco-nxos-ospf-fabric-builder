@@ -1,18 +1,12 @@
 - name: FABRIC TEST
   hosts: all
-  gather_facts: no
-
-  vars:
-    nxos_ssh:
-      host: "{{ ansible_host }}"
-      username: "{{ user }}"
-      password: "{{ pw }}"
-      transport: cli
+  gather_facts: false
+  vars_files:
+    - group_vars/nxos.yml
 
   tasks:
     - name: "Check Connectivity (ping)"
       nxos_ping:
-        provider: "{{ nxos_ssh }}"
         source: "{{ hostvars[inventory_hostname]['lo0_ipaddr'] }}"
         vrf: default
         dest: "192.168.1.{{item}}"
