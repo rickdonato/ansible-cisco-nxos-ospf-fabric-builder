@@ -3,7 +3,7 @@
 Ansible code to build and test a spine and leaf OSPF fabric on a Cisco NXOS based infrastructure.
 
 ## Contents of Repo
-* `./playbooks` - Contains the build and test playbooks.
+* `./playbooks` - Contains the build and test playbooks, along with the group vars.
 * `ansible.cfg` - The ansible configuration.
 * `hosts` - The inventory file, including the loopback ips and interface range variables.
 
